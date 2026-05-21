@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title">
+  <title id="title">Cinevora</title>
+  <defs>
+    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 1  0 0.08 0 0 0  0 0 0.02 0 0  0 0 0 0.9 0" result="redGlow"/>
+      <feMerge>
+        <feMergeNode in="redGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="textGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff1b12"/>
+      <stop offset="0.45" stop-color="#ff4b35"/>
+      <stop offset="1" stop-color="#ff1008"/>
+    </linearGradient>
+    <linearGradient id="swooshGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff3a16" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#ff3a16"/>
+      <stop offset="1" stop-color="#ff0c05" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="190" fill="transparent"/>
+  <g filter="url(#glow)">
+    <text x="64" y="112"
+          fill="url(#textGrad)"
+          stroke="#ff6a4a"
+          stroke-width="1.2"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="72"
+          font-weight="700"
+          letter-spacing="2">CINEVORA</text>
+    <path d="M52 122 C150 154 416 142 692 124"
+          fill="none"
+          stroke="url(#swooshGrad)"
+          stroke-width="8"
+          stroke-linecap="round"/>
+    <path d="M49 124 C155 147 418 136 690 122"
+          fill="none"
+          stroke="#ff1a0d"
+          stroke-width="2"
+          stroke-linecap="round"
+          opacity="0.9"/>
+  </g>
+</svg>
